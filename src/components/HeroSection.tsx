@@ -50,7 +50,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="container mx-auto px-4 min-h-screen flex items-center relative z-20">
-        <div className="max-w-4xl pt-40 pb-20 md:pt-32">
+        <div className="max-w-4xl pt-32 pb-20 md:pt-32">
           {/* Main Heading */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
