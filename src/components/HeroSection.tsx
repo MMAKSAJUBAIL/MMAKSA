@@ -98,7 +98,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Link
-              href="#"
+              href="#contact"
               className="group inline-flex items-center justify-center w-full md:w-auto gap-2 bg-orange text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-amber-600 transition-all duration-300 relative overflow-hidden"
             >
               Start Consulting

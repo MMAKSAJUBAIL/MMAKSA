@@ -9,6 +9,7 @@ import WhyUsSection from "@/components/WhyUs"
 import TeamSection from "@/components/TeamSection"
 import TestimonialsSection from "@/components/Testimonials"
 import CeoMessage from "@/components/CeoMessage"
+import ContactSection from "@/components/Contact"
 import Footer from "@/components/Footer"
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <TeamSection/>
       <WhyUsSection/>
       <TestimonialsSection/>
+      <ContactSection/>
       <Footer/>
     </main>
   )

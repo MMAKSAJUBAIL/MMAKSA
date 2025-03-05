@@ -87,7 +87,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
-                  href="#"
+                  href="#contact"
                   className="inline-flex items-center gap-2 bg-amber-500 text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-amber-600 transition-colors shadow-lg"
                 >
                   <Phone className="w-4 h-4" />
@@ -130,7 +130,7 @@ export default function Navbar() {
 
             {/* Menu Content */}
             <motion.div
-              className="absolute right-0 top-0 bottom-0 w-64 bg-white shadow-2xl py-20 px-6"
+              className="absolute right-0 top-0 bottom-0 w-64 bg-white shadow-2xl py-28 px-6 "
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
@@ -165,7 +165,7 @@ export default function Navbar() {
                   className="pt-6"
                 >
                   <Link
-                    href="/contact"
+                    href="#contact"
                     className="flex items-center justify-center gap-2 w-full bg-amber-500 text-white py-3 rounded-lg font-bold hover:bg-amber-600 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -181,4 +181,3 @@ export default function Navbar() {
     </>
   )
 }
-

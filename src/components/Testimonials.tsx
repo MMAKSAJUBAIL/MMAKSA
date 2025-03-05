@@ -147,7 +147,7 @@ export default function TestimonialsSection() {
           </div>
 
           {/* Testimonials */}
-          <div className="relative h-[400px] md:h-[300px]">
+          <div className="relative min-h-[300px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -157,7 +157,7 @@ export default function TestimonialsSection() {
                 transition={{ duration: 0.5 }}
                 className="absolute inset-0"
               >
-                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 h-full flex flex-col justify-between relative overflow-hidden">
+                <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 h-full flex flex-col justify-between relative overflow-y-auto">
                   {/* Quote Icon */}
                   <div className="absolute top-4 right-4 text-amber-500/10">
                     <Quote className="w-24 h-24" />
@@ -214,4 +214,3 @@ export default function TestimonialsSection() {
     </section>
   )
 }
-
