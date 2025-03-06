@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import {  Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,11 +21,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "MMA Constructions",
-  description:
-    "Makki Bin Mohammed Constructions don't just build structures; they build futures, communities, and lasting relationships",
-  icons: {
-    icon: "/images/logo.png", 
-  },
+  description: "Makki Bin Mohammed Constructions don't just build structures; they build futures, communities, and lasting relationships",
 };
 
 export default function RootLayout({
