@@ -22,6 +22,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "MMA Constructions",
   description: "Makki Bin Mohammed Constructions don't just build structures; they build futures, communities, and lasting relationships",
+  icons: {
+    icon: "/favicon.ico", 
+  },
 };
 
 export default function RootLayout({
