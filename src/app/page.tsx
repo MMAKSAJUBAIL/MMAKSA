@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar"
 import HeroSection from "@/components/HeroSection"
 import Brief from "@/components/Brief"
 import ServicesSection from "@/components/Services"
-import ProjectsSection from "@/components/Projects"
+// import ProjectsSection from "@/components/Projects"
 import ServicesBasedProjects from "@/components/ServicesBasedProjects"
 import VisionMissionSection from "@/components/VisionMission"
 import WhyUsSection from "@/components/WhyUs"
@@ -22,7 +22,7 @@ export default function Home() {
       <CeoMessage/>
       <ServicesSection/>
       <ServicesBasedProjects/>
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       <TeamSection/>
       <WhyUsSection/>
       <TestimonialsSection/>

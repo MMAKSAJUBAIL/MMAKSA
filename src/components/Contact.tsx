@@ -119,7 +119,7 @@ export default function ContactSection() {
             <ContactCard
               icon={<Mail className="w-6 h-6" />}
               title="Email Address"
-              items={["info@mmaksa.com"]}
+              items={["sales@mmaksa.com"]}
               delay={0.1}
               copyable
             />
@@ -136,7 +136,7 @@ export default function ContactSection() {
             <ContactCard
               icon={<Clock className="w-6 h-6" />}
               title="Business Hours"
-              items={["Monday - Friday: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 3:00 PM", "Sunday: Closed"]}
+              items={["Saturday - Thursday: 7:00 AM - 1:00 PM,", "1:30 PM - 5:00 PM", "Friday: Closed"]}
               delay={0.3}
             />
           </div>

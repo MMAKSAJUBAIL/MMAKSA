@@ -83,7 +83,7 @@ export default function CEOMessage() {
               <Quote className="absolute -left-8 top-0 w-16 h-16 text-amber-500/10" />
 
               <p className="text-zinc-600 leading-relaxed">
-                {`The company, with over 25 years of experience in the construction industry, is dedicated to turning
+                {`The company, with over 11 years of experience in the construction industry, is dedicated to turning
                 visions into reality. Their success is attributed to a team of skilled professionals who are committed
                 to exceeding client expectations.`}
               </p>

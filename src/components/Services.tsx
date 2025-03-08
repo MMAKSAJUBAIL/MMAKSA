@@ -3,18 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import {
-  HardHat,
-  Building2,
-  ClipboardCheck,
-  Construction,
-  Globe,
-  Home,
-  Store,
-  BracketsIcon as Bridge,
-  Wrench,
-  PaintBucket,
-} from "lucide-react"
+import { Users, Truck, Cog, Building, Package, ShoppingCart } from "lucide-react"
 
 interface ServiceProps {
   icon: React.ReactNode
@@ -73,67 +62,49 @@ const ServiceCard = ({ icon, title, description }: ServiceProps) => {
 export default function ServicesSection() {
   const services = [
     {
-      icon: <HardHat className="w-full h-full" />,
-      title: "Pre-construction Consulting",
+      icon: <Users className="w-full h-full" />,
+      title: "Manpower Supply",
       description:
-        "We provide clients with estimates, feasibility studies, and risk analysis to ensure smooth project execution.",
+        "We provide skilled and qualified personnel for construction projects, ensuring you have the right workforce for every job requirement.",
     },
     {
-      icon: <Building2 className="w-full h-full" />,
-      title: "Design-Build Services",
+      icon: <Truck className="w-full h-full" />,
+      title: "Equipment Supply",
       description:
-        "Our team collaborates with architects and designers to create functional and aesthetically pleasing structures.",
+        "Our extensive fleet of construction equipment is available for rent, from heavy machinery to specialized tools for all your project needs.",
     },
     {
-      icon: <ClipboardCheck className="w-full h-full" />,
-      title: "General Contracting",
+      icon: <Cog className="w-full h-full" />,
+      title: "Fabrication & Mechanical Job",
       description:
-        "We manage all aspects of construction, from obtaining permits to hiring subcontractors, ensuring projects are completed on time and within budget.",
+        "We offer comprehensive fabrication and mechanical services, including custom metal fabrication, installation, and maintenance solutions.",
     },
     {
-      icon: <Construction className="w-full h-full" />,
-      title: "Construction Management",
-      description: "We oversee the planning, coordination, and control of a project from beginning to completion.",
-    },
-    {
-      icon: <Globe className="w-full h-full" />,
-      title: "Sustainable Construction",
-      description: "We prioritize eco-friendly practices and materials.",
-    },
-    {
-      icon: <Home className="w-full h-full" />,
-      title: "Residential Construction",
-      description: "We build various types of homes ranging from single-family homes to high-rise apartment buildings.",
-    },
-    {
-      icon: <Store className="w-full h-full" />,
-      title: "Commercial Construction",
-      description: "We construct office buildings, warehouses, retail stores, and more.",
-    },
-    {
-      icon: <Bridge className="w-full h-full" />,
-      title: "Infrastructure Construction",
+      icon: <Building className="w-full h-full" />,
+      title: "Civil Job",
       description:
-        "We are equipped to handle large-scale public works projects such as bridges, highways, and airports.",
+        "Our civil engineering expertise covers infrastructure development, structural work, and site preparation with precision and quality.",
     },
     {
-      icon: <Wrench className="w-full h-full" />,
-      title: "Post-Construction Services",
+      icon: <Package className="w-full h-full" />,
+      title: "Material Supply",
       description:
-        "After project completion, we provide maintenance and repair services to ensure the longevity of our constructions.",
+        "We source and supply high-quality construction materials, ensuring timely delivery and competitive pricing for your projects.",
     },
     {
-      icon: <PaintBucket className="w-full h-full" />,
-      title: "Renovation and Remodeling",
-      description: "We offer renovation services to update and enhance existing structures.",
+      icon: <ShoppingCart className="w-full h-full" />,
+      title: "General Trading Services",
+      description:
+        "Beyond construction, we offer diverse trading services to meet various business needs with reliability and professional expertise.",
     },
   ]
 
   return (
-    <section id="services"
+    <section
+      id="services"
       className="py-16 md:py-24 relative bg-cover bg-center max-w-screen-2xl mx-auto"
       style={{
-        backgroundImage: `url('/images/service.jpg')`, // Replace with your image path
+        backgroundImage: `url('/images/service.jpg')`,
       }}
     >
       {/* Semi-transparent overlay */}
@@ -160,7 +131,7 @@ export default function ServicesSection() {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
           ))}
@@ -169,3 +140,4 @@ export default function ServicesSection() {
     </section>
   )
 }
+

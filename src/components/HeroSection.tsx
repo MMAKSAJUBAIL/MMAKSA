@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import { useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { ArrowRight, Building2, Hammer, PaintBucket } from "lucide-react";
+import { useRef } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { ArrowRight, Users, Truck, Building } from "lucide-react"
 
 export default function HeroSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null)
 
   return (
     <div
@@ -40,11 +40,7 @@ export default function HeroSection() {
           className="absolute top-0 left-0 h-full w-full"
           style={{ transform: "scaleX(-1)" }}
         >
-          <path
-            d="M0,0 L75,0 C50,50 50,50 75,100 L0,100 Z"
-            fill="currentColor"
-            className="text-gulfBlue opacity-90"
-          />
+          <path d="M0,0 L75,0 C50,50 50,50 75,100 L0,100 Z" fill="currentColor" className="text-gulfBlue opacity-90" />
         </svg>
       </div>
 
@@ -52,11 +48,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 min-h-screen flex items-center relative z-20">
         <div className="max-w-4xl pt-32 pb-20 md:pt-32">
           {/* Main Heading */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Makki bin <span className="text-amber-500">Mohammed</span>
               <br />
@@ -72,9 +64,9 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {[
-              { Icon: Building2, text: "Construction" },
-              { Icon: Hammer, text: "Demolition" },
-              { Icon: PaintBucket, text: "Decoration" },
+              { Icon: Users, text: "Manpower Supply" },
+              { Icon: Truck, text: "Equipment Supply" },
+              { Icon: Building, text: "Civil Job" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -84,9 +76,7 @@ export default function HeroSection() {
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-amber-500/10 flex items-center justify-center group-hover:bg-orange transition-colors">
                   <item.Icon className="w-5 h-5 md:w-6 md:h-6 text-orange group-hover:text-white transition-colors" />
                 </div>
-                <span className="font-medium group-hover:text-orange transition-colors">
-                  {item.text}
-                </span>
+                <span className="font-medium group-hover:text-orange transition-colors">{item.text}</span>
               </motion.div>
             ))}
           </motion.div>
@@ -98,15 +88,11 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Link
-              href="#contact"
+              href="#services"
               className="group inline-flex items-center justify-center w-full md:w-auto gap-2 bg-orange text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-amber-600 transition-all duration-300 relative overflow-hidden"
             >
-              Start Consulting
-              <motion.div
-                className="relative"
-                whileHover={{ x: 5 }}
-                transition={{ type: "spring", stiffness: 200 }}
-              >
+              More Services
+              <motion.div className="relative" whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 200 }}>
                 <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
               </motion.div>
               {/* Hover Effect */}
@@ -121,5 +107,6 @@ export default function HeroSection() {
       <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl hidden md:block" />
       <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl hidden md:block" />
     </div>
-  );
+  )
 }
+

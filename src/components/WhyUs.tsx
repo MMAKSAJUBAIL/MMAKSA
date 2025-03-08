@@ -5,7 +5,7 @@ import {
   motion,
   useScroll,
   useInView,
-} from "framer-motion"; // Removed useTransform
+} from "framer-motion"; 
 import { Users, Leaf, Lightbulb, Trophy } from "lucide-react";
 import Image from "next/image";
 
@@ -127,16 +127,16 @@ export default function WhyUsSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            With over two decades of experience, we bring expertise, innovation,
+            With over a decade of experience, we bring expertise, innovation,
             and sustainability to every project.
           </motion.p>
         </div>
 
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-          <Counter end={20} label="Years Experience" />
-          <Counter end={500} label="Projects Completed" />
-          <Counter end={150} label="Expert Team Members" />
+          <Counter end={11} label="Years Experience" />
+          <Counter end={20} label="Projects Completed" />
+          <Counter end={50} label="Expert Team Members" />
           <Counter end={98} label="Client Satisfaction %" />
         </div>
 
@@ -147,7 +147,7 @@ export default function WhyUsSection() {
             <WhyUsCard
               icon={Trophy}
               title="Experience and Expertise"
-              description="With over 10-20 years of experience in the construction industry, Makki Al-Abadi General Construction Establishment has a proven track record of delivering high-quality projects across various sectors."
+              description="With over 11 years of experience in the construction industry, Makki Al-Abadi General Construction Establishment has a proven track record of delivering high-quality projects across various sectors."
             />
             <WhyUsCard
               icon={Users}

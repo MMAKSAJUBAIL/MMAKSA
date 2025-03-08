@@ -13,7 +13,7 @@ export default function Brief() {
               {`We're Building`} <span className="text-orange">Everything Best</span> That You Need!
             </h1>
             <p className="text-black max-w-xl">
-              Makki Al-Abadi General Construction has +20 years of experience in various sectors, focusing on quality
+              Makki Al-Abadi General Construction has +11 years of experience in various sectors, focusing on quality
               work, innovation, and sustainability to exceed client expectations.
             </p>
             <Link href={"#ceo"}>
@@ -25,7 +25,7 @@ export default function Brief() {
          
           <div className="relative h-[400px] md:h-[500px] grid grid-cols-2 lg:mt-40 lg:gap-x-5 xl:gap-x-0">
           <div className="absolute hidden md:block top-48 right-80 lg:right-44 xl:top-48 xl:right-72 2xl:right-96 2xl:top-56 bg-orange text-white p-4 z-10 font-bold">
-                <div className="text-2xl">+20 Years</div>
+                <div className="text-2xl">+11 Years</div>
                 <div>Of Experience</div>
               </div>
           <div className="mr-3 mt-8 sm:mt-10 sm:mr-0 sm:pl-10 md:pl-20 lg:pl-0">
@@ -72,7 +72,7 @@ export default function Brief() {
         <div className="text-4xl font-bold text-gulfBlue mb-4 transition-all duration-300 group-hover:text-white">01</div>
         <h3 className="text-xl font-bold text-orange mb-3 transition-all duration-300 group-hover:text-white">Experienced Construction</h3>
         <p className="text-zinc-800 transition-all duration-300 group-hover:text-white">
-          Makki Al-Abadi General Construction has +20 years of experience in various sectors.
+          Makki Al-Abadi General Construction has +11 years of experience in various sectors.
         </p>
         <div className="absolute inset-0 bg-gulfBlue opacity-0 group-hover:opacity-100 transition-all duration-300 -z-10"></div>
       </div>
